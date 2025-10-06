@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: audioscribe-backend
+    expose:
+      - 8000
+    env_file:
+      - .env
+    environment:
+      - WHISPER_MODEL_NAME=small
+      - PYTHONPATH=/app
+    volumes:
+      - whisper_cache:/root/.cache/whisper
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: audioscribe-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  whisper_cache:
+    driver: local

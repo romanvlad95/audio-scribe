@@ -1,0 +1,22 @@
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.git
+.gitignore
+.dockerignore
+
+# Project-specific ignores
+.idea
+.pytest_cache
+.coverage
+
+# Env and local settings
+.env
+
+# Frontend build artifacts
+frontend/node_modules
+frontend/dist
+
+# Python virtual environment
+venv
