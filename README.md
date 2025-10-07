@@ -4,7 +4,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
 ## Audio Scribe demo screens
 
 ### Home Page
@@ -15,7 +14,6 @@
 
 ### Grammar Correction
 ![Grammar Correction](docs/screenshots/grammar.png)
----
 
 ## Tech Stack
 
@@ -26,7 +24,6 @@
   - **Grammar Correction:** Google Gemini API
 - **Infrastructure:** Docker, Docker Compose, Nginx
 
----
 
 ## Features
 
@@ -112,13 +109,11 @@ graph TB
     class Frontend,Backend,Services,External containerStyle
 ```
 
----
+
 
 ## CI Status
 
 [![CI](https://github.com/romanvlad95/audio-scribe/actions/workflows/ci.yml/badge.svg)](https://github.com/romanvlad95/audio-scribe/actions/workflows/ci.yml)
-
----
 
 
 ## Getting Started
@@ -128,10 +123,9 @@ graph TB
 - [Docker & Docker Compose](https://www.docker.com/products/docker-desktop)
 - A **Google Gemini API Key** — used for grammar correction. You can get one from [Google AI Studio](https://aistudio.google.com/app/apikey).
 - An **OpenAI API Key** — (optional but not necessary) if you want to use OpenAI Whisper API for transcription.
-### ⚙️ Installation
+### Installation
 
 1.  **Clone the repository:**
-    > **Note:** Remember to replace `your-username/your-repo` with your actual repository details.
     ```bash
     git clone https://github.com/romanvlad95/audio-scribe
     cd audio-scribe
@@ -150,7 +144,6 @@ graph TB
     ```
     The application will become available at `http://localhost:3000`.
 
----
 
 ## Usage
 
@@ -159,7 +152,6 @@ graph TB
 3.  Click "Transcribe Audio".
 4.  Once transcription is complete, you can click "Fix Grammar" to get a corrected version of the text.
 
----
 
 ## License
 
