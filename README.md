@@ -5,8 +5,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
+## Audio Scribe demo screens
 
-## 🛠️ Tech Stack
+### Home Page
+![Home Page](docs/screenshots/home.png)
+
+### Transcription Flow
+![Transcription Flow](docs/screenshots/transcription.png)
+
+### Grammar Correction
+![Grammar Correction](docs/screenshots/grammar.png)
+---
+
+## Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS
 - **Backend:** FastAPI (Python)
@@ -17,7 +28,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 - **Seamless Audio Upload:** Drag-and-drop or browse for audio files (MP3, WAV, M4A, etc.).
 - **Accurate Transcription:** Utilizes OpenAI's Whisper model for fast and accurate speech-to-text conversion.
@@ -28,7 +39,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The application is composed of two main services orchestrated by Docker Compose: a frontend container and a backend container.
 
@@ -102,22 +113,17 @@ graph TB
 ```
 
 ---
-## 🖼️ Screenshots
 
-### Home Page
-![Home Page](docs/screenshots/home.png)
+## CI Status
 
-### Transcription Flow
-![Transcription Flow](docs/screenshots/transcription.png)
-
-### Grammar Correction
-![Grammar Correction](docs/screenshots/grammar.png)
+[![CI](https://github.com/romanvlad95/audio-scribe/actions/workflows/ci.yml/badge.svg)](https://github.com/romanvlad95/audio-scribe/actions/workflows/ci.yml)
 
 ---
 
-## 🚀 Getting Started
 
-### 📋 Prerequisites
+## Getting Started
+
+### Prerequisites
 
 - [Docker & Docker Compose](https://www.docker.com/products/docker-desktop)
 - A **Google Gemini API Key** — used for grammar correction. You can get one from [Google AI Studio](https://aistudio.google.com/app/apikey).
@@ -146,7 +152,7 @@ graph TB
 
 ---
 
-## 📖 Usage
+## Usage
 
 1.  Open your web browser and navigate to `http://localhost:3000`.
 2.  Drag and drop an audio file or use the "Browse Files" button to select one.
@@ -155,6 +161,6 @@ graph TB
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
